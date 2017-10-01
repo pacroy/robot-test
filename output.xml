@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20171001 21:39:19.799" generator="Robot 3.0.2 (Python 2.7.10 on darwin)">
+<suite source="/Users/pacroy/Documents/git/robot-test/test.robot" id="s1" name="Test">
+<test id="s1-t1" name="Facebook Login">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>https://www.facebook.com/</arg>
+<arg>gc</arg>
+</arguments>
+<msg timestamp="20171001 21:39:19.950" level="INFO">Opening browser 'gc' to base url 'https://www.facebook.com/'</msg>
+<status status="PASS" endtime="20171001 21:39:23.884" starttime="20171001 21:39:19.950"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="Selenium2Library">
+<doc>Waits until `text` appears on current page.</doc>
+<arguments>
+<arg>Facebook</arg>
+</arguments>
+<status status="PASS" endtime="20171001 21:39:23.928" starttime="20171001 21:39:23.885"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>email</arg>
+<arg>email@domain.com</arg>
+</arguments>
+<msg timestamp="20171001 21:39:23.929" level="INFO">Typing text 'email@domain.com' into text field 'email'</msg>
+<status status="PASS" endtime="20171001 21:39:24.203" starttime="20171001 21:39:23.929"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>pass</arg>
+<arg>12345678</arg>
+</arguments>
+<msg timestamp="20171001 21:39:24.204" level="INFO">Typing text '12345678' into text field 'pass'</msg>
+<status status="PASS" endtime="20171001 21:39:24.397" starttime="20171001 21:39:24.204"></status>
+</kw>
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks a button identified by `locator`.</doc>
+<arguments>
+<arg>เข้าสู่ระบบ</arg>
+</arguments>
+<msg timestamp="20171001 21:39:24.397" level="INFO">Clicking button 'เข้าสู่ระบบ'.</msg>
+<status status="PASS" endtime="20171001 21:39:32.179" starttime="20171001 21:39:24.397"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="Selenium2Library">
+<doc>Waits until `text` appears on current page.</doc>
+<arguments>
+<arg>รหัสผ่านที่คุณป้อนไม่ถุกต้อง</arg>
+</arguments>
+<status status="PASS" endtime="20171001 21:39:32.213" starttime="20171001 21:39:32.180"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20171001 21:39:32.613" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20171001 21:39:32.614" starttime="20171001 21:39:32.214"></status>
+</kw>
+<kw name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20171001 21:39:32.713" starttime="20171001 21:39:32.614"></status>
+</kw>
+<status status="PASS" endtime="20171001 21:39:32.714" critical="yes" starttime="20171001 21:39:19.948"></status>
+</test>
+<status status="PASS" endtime="20171001 21:39:32.716" starttime="20171001 21:39:19.802"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="0" pass="1">Critical Tests</stat>
+<stat fail="0" pass="1">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="0" id="s1" name="Test" pass="1">Test</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
